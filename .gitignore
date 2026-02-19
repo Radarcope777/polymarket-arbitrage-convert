@@ -1,0 +1,67 @@
+# Build artifacts
+/target/
+**/*.rs.bk
+
+# Cargo lock for libraries (keep for binaries)
+# Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Queue data (runtime)
+/queue/
+*.queue
+
+# Temporary files
+/tmp/
+*.tmp
+*.bak
+
+# Test artifacts
+*.profraw
+*.profdata
+coverage/
+
+# Documentation build
+/doc/
+
+# Backup files
+*.orig
+*.backup
+
+# Not for public repo
+*.py
+!scripts/convert_retry.py
+!scripts/convert_relayer.py
+influenz_*/
+plans/
+moonbag/
+polymarket_convert.md
+telegram_post.md
+
+# Runtime data
+data/
+
+# Claude local settings
+.claude/
